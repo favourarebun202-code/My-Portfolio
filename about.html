@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-----------------------------header---------------------------->
+    <header class="header">
+        <a href="#"><img src="newlogo.png" alt="adonai fashion home logo"></a>
+        <div class="navMenu" id="navMenu">
+            <i class="bx bx-window-close" onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="bx bx-menu" onclick="openMenu()"></i>
+    </header>
+
+    <!-----------------------sub-head session------------------------------>
+    <section class="sub-header" id="sub-header">
+        <h1>About <span>Me</span></h1>
+
+    </section>
+
+    <!---------------------------about session-------------------->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="./IMAGES/smokeback.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <h4><span>I'm a</span> Fashion Designer</h4>
+                <p>who loves creating unique and beautiful garments for every generation. With a passion for textiles and a knack for precision, I’m always looking for new and creative ways to blend modern English styles with traditional Nigerian heritage, ensuring every client feels confident in what they wear. <br><br>
+                ​With my expertise in tailoring, design, and craftsmanship, I empower people to express their identity through high-quality fashion. Whether it’s sewing a custom cultural outfit, replicating a complex design, or simply amending a favorite piece, I’m here to provide professional and trustworthy service every step of the way at Adonai Fashion Home. <br><br> 
+                
+                ​When I’m not working on the latest design project, you can find me sharing my knowledge in our fashion school or sourcing the finest stones and accessories for our shop. I’m a big believer in the power of creativity and mentorship, and I make sure to take time to help aspiring tailors master the art of advanced fashion recreation. <br><br>
+                My passion for fashion is rooted in balance and community. Whether I'm sourcing creative materials like unique rhinestones and diverse zippers for our shop, or mentoring the next generation of designers in our fashion school, I approach every project with warmth, creativity, and a positive attitude. This homely, trustworthy approach ensures that every client—from young to old—feels welcome at Adonai Fashion Home.</p>
+                <a href="#" class="btn">Let's Talk</a>
+            </div>
+        </section>
+
+        <section class="others" id="others">
+            <div class="sub-text-title">
+                <h2>Why <span>Me?</span></h2>
+            </div>
+            <div class="others-img">
+                <img src="newlogo.png" alt="adonai fashion home logo">
+                <span class="circle-spin"></span>
+            </div>
+            <div class="others-text">
+                <h3><span>As</span> a Fashion Designer, Seamstress & Business Owner</h3>
+                <p>
+                    - I bring a professional perspective to every garment, combining technical tailoring expertise with a unique creative vision.  <br><br>
+                    - I understand that every client and every body type is unique, and I tailor my designs to meet individual needs—from young to old. <br><br>
+                    - I help my students and apprentices achieve their full potential, turning their passion for fashion into a reality.
+                </p>
+            </div>
+            <div>
+                <a href="contact.html" class="btn">Hire Me</a>
+            </div>
+        </section>
+    
+    
+    <!----------------------------footer---------------------------------->
+    <footer class="footer">
+        <div class="attribution">
+            <p>Design With <i class="bx bx-heart"></i> By Favour</p>
+        </div>
+        <div class="move-up">
+            <a href="#sub-header"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <!----------JS For Toggle Menu------------>
+    <script>
+    var navMenu = document.getElementById("navMenu");
+
+    function openMenu() {
+        navMenu.style.right = "0";
+    }
+
+    function closeMenu() {
+        navMenu.style.right = "-200px";
+    }
+    </script>
+
+
+
+</body>
+</html>
+
+<!--
+    <link  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+-->

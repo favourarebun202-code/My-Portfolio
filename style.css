@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'mulish', 'sans-serif', Georgia;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*highest level of selector in css*/
+:root{
+    --bg-color-one: #2a2a2a;
+    --bg-color-two: #202020;
+    --bg-color-sides: #111;
+    --text-color-one: #fff;
+    --text-color-two: #aaa;
+    --main-color:#ebd04b;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--bg-color-one);
+    color: var(--text-color-one);
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-color-sides);
+    padding: 2% 6%;
+    transition: all .45s ease;
+}
+
+.header img{
+    width: 135px;
+    height: 100px
+}
+
+.header bx{
+    display: none;
+}
+
+.navMenu{
+    flex: 1;
+    text-align: right;
+}
+
+.navMenu ul li{
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 25px;
+    position: relative;
+}
+
+.navMenu a {
+    color: var(--text-color-two);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+
+.navMenu a:hover, .navMenu a:active{
+    color: var(--main-color);
+}
+
+section{
+    padding: 160px 15% 120px;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./IMAGES/better.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show{
+    margin: 100px 0 20px;
+}
+
+.first{
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--text-color-one);
+}
+
+.second{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color-two);
+}
+
+
+
+.home-content h1{
+    font-size: var(--big-font);
+    font-weight: 800;
+    color: var(--text-color-one);
+    line-height: 1.1;
+    margin: 0 0 35px;
+}
+
+.home-content h3{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color-one);
+    line-height: 1.1;
+    margin: 0 0 35px;
+}
+
+.home-content p{
+    color: var(--text-color-two);
+    font-size: var(--p-font);
+    line-height: 1.0;
+    margin-bottom: 40px;
+}
+
+.button{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 6px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color-one);
+    letter-spacing: 1px;
+    transition: all .45s ease;
+}
+
+.btn:hover{
+    transform: scale(0.9);
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img{
+    max-width: 530px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.about-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color-one);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p{
+    font-size: var(--p-font);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 0.8;
+    margin-bottom: 4rem;
+    color: var(--text-color-two);
+}
+
+.services{
+    background-color: var(--bg-color-two);
+}
+
+.text-title{
+    text-align: center;
+}
+
+.text-title h2{
+    font-size: var(--h2-font);
+}
+
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.services-content .box{
+    background-color: var(--bg-color-one);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+
+.services-content .box:hover{
+    transform: translateY(-8px);
+}
+
+.services-content icons{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.services-content h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color-one);
+    margin-bottom: 15px;
+}
+
+.services-content .box{
+    color: var(--text-color-two);
+    font-size: 1rem;
+    line-height: 1.0;
+    margin-bottom: 55px;
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+    overflow: clip;
+}
+
+.portfolio-content .row{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio-content .row img{
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    border: 16px solid var(--bg-color-two);
+    transition: transform 0.5s;
+}
+
+.portfolio-content .row .cover{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7), var(--main-color));
+    border-radius: 8px;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.portfolio-content .row .cover h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.portfolio-content .row .cover p{
+    text-align: center;
+    color: var(--text-color-two);
+    line-height: 1.8;
+}
+
+.portfolio-content .row .cover i{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: cente;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--text-color-one);
+    color: var(--bg-color-one);
+}
+
+.portfolio-content .row:hover img{
+    transform: scale(1.1);
+}
+
+.portfolio-content .row:hover .cover{
+    height: 100%;
+}
+
+.contact{
+    background-color: var(--bg-color-two);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.contact-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.contact-text h4{
+    color: var(--text-color-one);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text p{
+    color: var(--text-color-two);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.contact-text list{
+    margin-bottom: 2.8rem;
+}
+
+.contact-text .list li{
+    margin-bottom: 12px;
+}
+
+.contact-text .list li a{
+    display: block;
+    color: var(--text-color-two);
+    font-size: 14px;
+    transition: all .45s ease;
+}
+
+.contact-text .list li a:hover{
+    color: var(--text-color-one);
+    transform: translateY(5px);
+}
+
+.contact-text .icons i{
+    width: 45px;
+    height: 45px;
+    color: var(--text-color-one);
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.contact-text .icons i:hover{
+    color: var(--main-color);
+}
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form input, .contact-form form textarea{
+    width: 100%;
+    padding: 14px;
+    background-color: var(--bg-color-one);
+    color: var(--text-color-one);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form form textarea{
+    resize: none;
+    height: 240px;
+}
+
+.contact-form form .submit{
+    width: 150px;
+    display: inline-block;
+    font-size: 16px;
+    background-color: var(--main-color);
+    color: var(--text-color-one);
+    transition: all .45s ease;
+}
+
+
+.contact-form form .submit:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer{
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--bg-color-sides);
+}
+
+.footer .attribution p{
+    color: var(--text-color-two);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.footer .attribution i{
+    color: var(--main-color);
+    font-size: 20px;
+    margin: 0 3px;
+}
+
+.footer .move-up i{
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--text-color-one);
+    background-color: var(--main-color);
+}
+
+@media(max-width: 1480px) {
+    .header{
+        padding: 12px 5%;
+        transition: 1s;
+    }
+
+    section{
+        padding: 110px 12% 60px;
+    } 
+
+    .footer{
+        padding: 12px 7%;
+    }
+}
+
+@media (max-width: 1100px) {
+    root{
+    --big-font: 4rem;
+    --h2-font: 2.5rem;
+    --p-font: 1rem;
+    }
+
+    .home{
+        height: 87vh;
+    }
+
+    .homme-content h3{
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .about,.contact{
+        grid-template-columns: 1fr;
+    }
+
+    .about-image{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .header .bx{
+        display: block;
+        color: var(--text-color-one);
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .navMenu{
+        position: fixed;
+        background-color: var(--bg-color-sides);
+        height: 100%;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        transition: all .45s ease;
+        text-align: center;
+    }
+
+    .navMenu ul{
+        padding: 30px;
+    }
+
+    .navMenu ul li {
+        display: block;
+    }  
+    J
+    .navMenu a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: var(--text-color-one);
+    }  
+}
+
+@media (max-width: 400px) {
+    .home h1{
+        font-size: 30px;
+    }
+
+    .home h3{
+        font-size: 20px;
+    }
+
+    .portfolio-content{
+            grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    }
+
+    .portfolio-content .row .cover p{
+        font-size: 13.5px;
+        line-height: 1.5;
+    }
+
+    .portfolio-content .row .cover h5{
+        font-size: 15px;
+        line-height: 10px ;
+    }
+}
+
+/************************************** webpages ******************************************/
+.sub-header{
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./IMAGES/smokeback.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.sub-header h1{
+    margin-top: 150px;
+    font-size: 4rem;
+}
+
+#others{
+    background-color: var(--bg-color-two);
+}
+
+.others {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.sub-text-title{
+    text-align: center;
+}
+
+.sub-text-title h2{
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.others-img{
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.others-img img{
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+    background-color: var(--text-color-one);
+}
+
+.others-img .cicle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(30 deg);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid transparent;
+    border-bottom: .2rem solid transparent;
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+}
+
+.others-text{
+    text-align: center;
+}
+
+.others-text h3{
+    font-size: 2rem;
+}
+
+.others-text p{
+    font-size: var(--p-font);
+    margin: 2rem 0;
+    color: var(--text-color-two);
+}
