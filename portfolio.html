@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-----------------------------header---------------------------->
+    <header class="header">
+        <a href="index.html"><img src="newlogo.png" alt="adonai fashion home logo"></a>
+        <div class="navMenu" id="navMenu">
+            <i class="bx bx-window-close" onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="bx bx-menu" onclick="openMenu()"></i>
+    </header>
+
+    <!-----------------------sub-head session------------------------------>
+    <section class="sub-header" id="sub-header">
+        <h1><span>Recent</span> Projects</h1>
+    </section>
+
+    <!------------------------portfolio session------------------------>
+    <section class="portfolio" id="portfolio">
+        <div class="sub-text-title">
+            <h2>Corporate, Formal and Traditional <span>Excellence</span></h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="image 1.jpg" alt="">
+                <div class="cover">
+                    <h5>Modern Cultural Wear</h5>
+                    <p>A stunning fusion of traditional Nigerian textiles and contemporary silhouettes, tailored to celebrate heritage with a morden flair.</p>
+                    <a href="portfolio.html"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="image 2.jpg" alt="">
+                <div class="cover">
+                    <h5>Bespoke English Wears</h5>
+                    <p>Custom-fitted suits, gowns, and corporate apparel designed with precision for a sophisticated look.</p>
+                    <a href="portfolio.html"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="portfolio" id="portfolio">
+        <div class="sub-text-title">
+            <h2>Precision <span>Craftmanship</span> & Essential <span>Accesories</span></h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="image 3.jpg" alt="">
+                <div class="cover">
+                    <h5>Recreations & Amendments</h5>
+                    <p>From perfecting the fit of a favorite garment to replicating complex high-fashion designs with absolute accuracy.</p>
+                    <a href="portfolio.html"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="image 5.jpg" alt="">
+                <div class="cover"> 
+                    <h5>Design Accessories</h5>
+                    <p>Highlighting our curated selection of rhinestones, buttons, and custom collar designs used to elevate casual wear and party garments.</p>
+                    <a href="portfolio.html"><i class="bx bx-link-external"></i></a>
+                </div>
+             </div>
+         </div>
+    </section>
+    
+    <section class="portfolio" id="portfolio">
+        <div class="sub-text-title">
+            <h2><span>Inclusive</span> Fashion and <span>Creative</span> Education</h2>
+        </div>
+        <div class="portfolio-content">
+            <div class="row">
+                <img src="image 6.jpg" alt="">
+                <div class="cover">
+                    <h5>Family & Kids Collection</h5>
+                    <p>Unique, warm, and friendly designs created for every age group, ensuring the whole family looks their best.</p>
+                    <a href="portfolio.html"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <img src="image 4.jpg" alt="">
+                <div class="cover">
+                    <h5>Fashion School Projects</h5>
+                    <p>Showcasing the complex designs and technical mastery developed by our students and apprentices at Adonai Fashion School.</p>
+                    <a href="portfolio.html"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!----------------------------footer---------------------------------->
+    <footer class="footer">
+        <div class="attribution">
+            <p>Design With <i class="bx bx-heart"></i> By Favour</p>
+        </div>
+        <div class="move-up">
+            <a href="#sub-header"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <!----------JS For Toggle Menu------------>
+    <script>
+    var navMenu = document.getElementById("navMenu");
+
+    function openMenu() {
+        navMenu.style.right = "0";
+    }
+
+    function closeMenu() {
+        navMenu.style.right = "-200px";
+    }
+    </script>
+
+
+
+</body>
+</html>
+
+<!--
+    <link  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+-->

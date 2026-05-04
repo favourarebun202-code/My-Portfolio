@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-----------------------------header---------------------------->
+    <header class="header">
+        <a href="index.html"><img src="newlogo.png" alt="adonai fashion home logo"></a>
+        <div class="navMenu" id="navMenu">
+            <i class="bx bx-window-close" onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="bx bx-menu" onclick="openMenu()"></i>
+    </header>
+
+    <!-----------------------sub-head session------------------------------>
+    <section class="sub-header" id="sub-header">
+        <h1>Contact <span>Me!</span></h1>
+    </section>
+
+    <!-----------------------------contact session--------------------------->
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3962.7412254476562!2d3.3595936!3d6.6789474!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9580d5df43cf%3A0xc63984157be2d88b!2s5Star%20Company!5e0!3m2!1sen!2sng!4v1777859475743!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h4 class="dot">Whatever you project may be...</h4>
+            <p>As a professional fashion designer, I am dedicated to bringing your style visions to life with unique and creative craftsmanship. Whether you're looking for bespoke tailoring, premium sewing materials, or professional training at our fashion school, let’s discuss how Adonai Fashion Home can serve you.</p>
+            <div class="list">
+                <li><a href="#">+2348069524496</a></li>
+                <li><a href="#">favourarebun202@gmail.com</a></li>
+                <li><a href="#">Like, Share & Suscribe</a></li>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="#"><i class="bx bxl-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="">
+                <input type="name" placeholder="Your Name" required>
+                <input type="email" placeholder="Your E-mail" required>
+                <input type="number" placeholder="Your Mobile Number" required>
+                <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You?" required></textarea>
+                <input type="submit" value="Send Message" class="submit">
+            </form>
+        </div>
+    </section>
+    
+    
+    <!----------------------------footer---------------------------------->
+    <footer class="footer">
+        <div class="attribution">
+            <p>Design With <i class="bx bx-heart"></i> By Favour</p>
+        </div>
+        <div class="move-up">
+            <a href="#sub-header"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <!----------JS For Toggle Menu------------>
+    <script>
+    var navMenu = document.getElementById("navMenu");
+
+    function openMenu() {
+        navMenu.style.right = "0";
+    }
+
+    function closeMenu() {
+        navMenu.style.right = "-200px";
+    }
+    </script>
+
+
+
+</body>
+</html>
+
+<!--
+    <link  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+-->

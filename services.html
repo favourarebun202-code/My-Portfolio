@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-----------------------------header---------------------------->
+    <header class="header">
+        <a href="index.html"><img src="newlogo.png" alt="adonai fashion home logo"></a>
+        <div class="navMenu" id="navMenu">
+            <i class="bx bx-window-close" onclick="closeMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="bx bx-menu" onclick="openMenu()"></i>
+    </header>
+
+    <!-----------------------sub-head session------------------------------>
+    <section class="sub-header" id="sub-header">
+        <h1><span>My</span> Services</h1>
+    </section>
+    
+     <!-------------------------services session--------------------------->
+    <section class="services" id="services">
+        <div class="text-title">
+            <h2>What I <span>Do?</span></h2>
+        </div>
+        <div class="services-content">
+            <div class="box">
+                <div class="icons">
+                    <i class="bx bx-code"></i>
+                </div>
+                <h3>Custom Fashion Design</h3>
+                <p>We specialize in creating high-quality English wears and modern Nigerian cultural designs for all ages. Whether it’s sewing from scratch, replicating a style, or expert garment amendments, we deliver professional results.</p>
+                <a href="services.html" class="btn">Patronize Us</a>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <i class="bx bx-pen"></i>
+                </div>
+                <h3>Adonai Fashion School</h3>
+                <p>Master the art of tailoring through our professional training and apprenticeship programs. We teach everything from basic stitching to the creation of complex, high-fashion designs.</p>
+                <a href="services.html" class="btn">Enroll now</a>
+            </div>
+
+            <div class="box">
+                <div class="icons">
+                    <i class="bx bx-design"></i>
+                </div>
+                <h3>Premium Fashion Supplies</h3>
+                <p>We provide a wide range of sewing essentials, including quality threads, diverse zip types, colours and sizes, machine parts, and decorative and elegant design accessories like rhinestones and custom buttons.</p>
+                <a href="services.html" class="btn">Patronize Us</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="others" >
+            <div class="sub-text-title">
+                <h2><span>Other</span> Services</h2>
+            </div>
+            <div class="others-img">
+                <img src="image 7.jpg" alt="">
+                <span class="circle-spin"></span>
+            </div>
+            <div class="others-text">
+                <h3>Fashion Design <span>Training</span></h3>
+                <p>I’m passionate about helping people master the skills they need to succeed in the world of fashion. Our training courses focus on the fundamentals of tailoring, garment construction, and design principles, giving students a solid foundation to build on. By the end of our program, students have the technical tools they need to create their own unique collections and master complex fashion designs. Graduates receive professional certification and have the opportunity to join our team through our apprenticeship program to further refine their craft for clients.</p>
+            </div>
+            <div>
+                <a href="contact.html" class="btn">Enroll Now</a>
+            </div>
+        </section>
+    
+    
+    <!----------------------------footer---------------------------------->
+    <footer class="footer">
+        <div class="attribution">
+            <p>Design With <i class="bx bx-heart"></i> By Favour</p>
+        </div>
+        <div class="move-up">
+            <a href="#sub-header"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <!----------JS For Toggle Menu------------>
+    <script>
+    var navMenu = document.getElementById("navMenu");
+
+    function openMenu() {
+        navMenu.style.right = "0";
+    }
+
+    function closeMenu() {
+        navMenu.style.right = "-200px";
+    }
+    </script>
+
+
+
+</body>
+</html>
+
+<!--
+    <link  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+-->

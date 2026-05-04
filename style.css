@@ -91,7 +91,7 @@ span{
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./IMAGES/better.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(better.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -234,7 +234,7 @@ span{
     transform: translateY(-8px);
 }
 
-.services-content icons{
+.services-content .icons{
     font-size: 32px;
     margin-bottom: 20px;
 }
@@ -258,7 +258,7 @@ span{
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
     gap: 2.5rem;
-    margin-bottom: 5rem;
+    margin-top: 5rem;
     overflow: clip;
 }
 
@@ -310,7 +310,7 @@ span{
     font-size: 20px;
     margin-top: 20px;
     display: flex;
-    align-items: cente;
+    align-items: center;
     justify-content: center;
     border-radius: 50%;
     background-color: var(--text-color-one);
@@ -564,7 +564,7 @@ span{
 .sub-header{
     height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./IMAGES/smokeback.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(smokeback.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -640,4 +640,17 @@ span{
     font-size: var(--p-font);
     margin: 2rem 0;
     color: var(--text-color-two);
+}
+
+.map {
+    margin: auto;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+.contact-text .dot{
+    font-size: 1.7rem;
+    color: var(--main-color);
 }
