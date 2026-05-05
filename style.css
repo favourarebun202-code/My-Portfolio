@@ -17,7 +17,7 @@
     --bg-color-sides: #111;
     --text-color-one: #fff;
     --text-color-two: #aaa;
-    --main-color:#ebd04b;
+    --main-color:#dcb371;
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
@@ -246,7 +246,7 @@ span{
     margin-bottom: 15px;
 }
 
-.services-content .box{
+.services-content p{
     color: var(--text-color-two);
     font-size: 1rem;
     line-height: 1.0;
